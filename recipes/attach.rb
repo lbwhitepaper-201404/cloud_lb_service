@@ -1,7 +1,7 @@
 # encoding: UTF-8
 #
 # Cookbook Name:: cloud_lb_service
-# Recipe:: default
+# Recipe:: attach
 #
 # Copyright 2014, Ryan J. Geyer <me@ryangeyer.com>
 #
@@ -22,4 +22,5 @@ cloud_lb_service 'Load Balancer' do
   listen_ip ::OhaiPrivateIpaddress::Helper.ip(node)
   listen_port '80' # Should be a variable, but a node attribute makes it just as hardcoded
   vhost_path '/'
+  action :attach
 end

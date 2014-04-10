@@ -1,0 +1,22 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: ubuntu-12.04
+  - name: centos-6.4
+
+suites:
+  - name: elb
+    run_list:
+      - recipe[cloud_lb_service::default]
+      - recipe[cloud_lb_service::attach]
+    attributes:
+      cloud_lb_service:
+        type: elb
+        load_balancer: lbname
+        username: username
+        password: password

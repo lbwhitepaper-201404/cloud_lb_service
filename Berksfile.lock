@@ -1,0 +1,48 @@
+{
+  "sources": {
+    "cloud_lb_service": {
+      "path": "."
+    },
+    "marker": {
+      "locked_version": "1.0.0",
+      "git": "git://github.com/rightscale-cookbooks/marker.git",
+      "ref": "893cb7e00691a5b6a6192b43b67d7a975b6c41c4"
+    },
+    "google_cloud": {
+      "path": "../google_cloud"
+    },
+    "rsc_google_cloud": {
+      "path": "../rsc_google_cloud"
+    },
+    "java": {
+      "locked_version": "1.22.0"
+    },
+    "apt": {
+      "locked_version": "2.3.8"
+    },
+    "rightscale_tag": {
+      "locked_version": "1.0.1"
+    },
+    "machine_tag": {
+      "locked_version": "1.0.4"
+    },
+    "ohai-private-ipaddress": {
+      "locked_version": "0.0.1"
+    },
+    "ohai": {
+      "locked_version": "1.1.12"
+    },
+    "python": {
+      "locked_version": "1.4.6"
+    },
+    "build-essential": {
+      "locked_version": "2.0.0"
+    },
+    "yum-epel": {
+      "locked_version": "0.3.4"
+    },
+    "yum": {
+      "locked_version": "3.1.4"
+    }
+  }
+}
