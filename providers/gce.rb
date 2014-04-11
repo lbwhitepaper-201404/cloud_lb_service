@@ -34,9 +34,6 @@ action :install do
   #    'not used cause the google_cloud stuff is set above'
   #node.override[:rsc_google_cloud][:datacenter] =
   #    'not used cause the google_cloud stuff is set above'
-
-  run_context.include_recipe 'rsc_google_cloud::default'
-  run_context.include_recipe 'google_cloud::default'
 end
 
 action :attach do

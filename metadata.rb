@@ -7,8 +7,12 @@ description      'Installs/Configures cloud_lb_service'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.0'
 
-%w(marker java apt rightscale_tag ohai-private-ipaddress rsc_google_cloud google_cloud).each do |d|
+%w(marker java apt rightscale_tag ohai-private-ipaddress).each do |d|
   depends d
+end
+
+%w(rsc_google_cloud google_cloud).each do |r|
+  recommends r
 end
 
 recipe 'cloud_lb_service::default', 'installs necessary CLI tools and dependencies.'
